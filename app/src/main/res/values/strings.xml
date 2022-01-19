@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YesYesGram</string>
+    <string name="button">Button</string>
+    <string name="play_game_btn">Play Game</string>
+    <string name="fieldColorBtn">BLACK</string>
+    <string name="catImg">Cat Img</string>
+    <string name="hearth1">Hearth 1</string>
+    <string name="hearth2">Hearth 2</string>
+    <string name="hearth3">Hearth 3</string>
+    <string name="btnBack">BACK</string>
+    <string name="selLevel">Select Level</string>
+    <string name="textLogo">YesYesGram</string>
+    <string name="playBtn">PLAY</string>
+</resources>

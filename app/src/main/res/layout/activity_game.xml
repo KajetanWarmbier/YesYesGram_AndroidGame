@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:id="@+id/hearthsLayout"
+        android:layout_width="222dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/hearth1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/hearth1"
+            app:srcCompat="@drawable/hearth_icon" />
+
+        <ImageView
+            android:id="@+id/hearth2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/hearth2"
+            app:srcCompat="@drawable/hearth_icon" />
+
+        <ImageView
+            android:id="@+id/hearth3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/hearth3"
+            app:srcCompat="@drawable/hearth_icon" />
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/hintsX"
+        android:layout_width="322dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="60dp"
+        app:columnCount="5"
+        app:layout_constraintBottom_toTopOf="@+id/mainGameFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="1">
+
+        <TextView
+            android:id="@+id/hint_1_0"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hint_1_1"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/hint_1_2"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/hint_1_3"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/hint_1_4"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <FrameLayout
+        android:id="@+id/mainGameFrame"
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="217dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/yesyesgram_grid_five"
+            app:columnCount="5"
+            app:rowCount="5">
+
+            <Button
+                android:id="@+id/field_0_0"
+                style="@style/fieldBtn"
+                android:tag="0;0" />
+
+            <Button
+                android:id="@+id/field_0_1"
+                style="@style/fieldBtn"
+                android:tag="0;1" />
+
+            <Button
+                android:id="@+id/field_0_2"
+                style="@style/fieldBtn"
+                android:tag="0;2" />
+
+            <Button
+                android:id="@+id/field_0_3"
+                style="@style/fieldBtn"
+                android:tag="0;3" />
+
+            <Button
+                android:id="@+id/field_0_4"
+                style="@style/fieldBtn"
+                android:tag="0;4" />
+
+            <!--        Second Row-->
+
+            <Button
+                android:id="@+id/field_1_0"
+                style="@style/fieldBtn"
+                android:tag="1;0" />
+
+            <Button
+                android:id="@+id/field_1_1"
+                style="@style/fieldBtn"
+                android:tag="1;1" />
+
+            <Button
+                android:id="@+id/field_1_2"
+                style="@style/fieldBtn"
+                android:tag="1;2" />
+
+            <Button
+                android:id="@+id/field_1_3"
+                style="@style/fieldBtn"
+                android:tag="1;3" />
+
+            <Button
+                android:id="@+id/field_1_4"
+                style="@style/fieldBtn"
+                android:tag="1;4" />
+
+
+            <!--        Third Row-->
+
+            <Button
+                android:id="@+id/field_2_0"
+                style="@style/fieldBtn"
+                android:tag="2;0" />
+
+            <Button
+                android:id="@+id/field_2_1"
+                style="@style/fieldBtn"
+                android:tag="2;1" />
+
+            <Button
+                android:id="@+id/field_2_2"
+                style="@style/fieldBtn"
+                android:tag="2;2" />
+
+            <Button
+                android:id="@+id/field_2_3"
+                style="@style/fieldBtn"
+                android:tag="2;3" />
+
+            <Button
+                android:id="@+id/field_2_4"
+                style="@style/fieldBtn"
+                android:tag="2;4" />
+
+            <!--        Fourth row-->
+
+            <Button
+                android:id="@+id/field_3_0"
+                style="@style/fieldBtn"
+                android:tag="3;0" />
+
+            <Button
+                android:id="@+id/field_3_1"
+                style="@style/fieldBtn"
+                android:tag="3;1" />
+
+            <Button
+                android:id="@+id/field_3_2"
+                style="@style/fieldBtn"
+                android:tag="3;2" />
+
+            <Button
+                android:id="@+id/field_3_3"
+                style="@style/fieldBtn"
+                android:tag="3;3" />
+
+            <Button
+                android:id="@+id/field_3_4"
+                style="@style/fieldBtn"
+                android:tag="3;4" />
+
+            <!--        Fifth Row-->
+
+            <Button
+                android:id="@+id/field_4_0"
+                style="@style/fieldBtn"
+                android:tag="4;0" />
+
+            <Button
+                android:id="@+id/field_4_1"
+                style="@style/fieldBtn"
+                android:tag="4;1" />
+
+            <Button
+                android:id="@+id/field_4_2"
+                style="@style/fieldBtn"
+                android:tag="4;2" />
+
+            <Button
+                android:id="@+id/field_4_3"
+                style="@style/fieldBtn"
+                android:tag="4;3" />
+
+            <Button
+                android:id="@+id/field_4_4"
+                style="@style/fieldBtn"
+                android:tag="4;4" />
+
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="322dp"
+            android:layout_height="322dp"
+            android:background="@drawable/gridlayout_border">
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/catImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:alpha="0"
+            android:background="@drawable/picture_1"
+            android:contentDescription="@string/catImg"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/fieldColorBtn"
+        android:layout_width="105dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/black"
+        android:onClick="changeFieldColor"
+        android:text="@string/fieldColorBtn"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainGameFrame" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/hintsY"
+        android:layout_width="60dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="218dp"
+        app:columnCount="1"
+        app:layout_constraintEnd_toStartOf="@+id/mainGameFrame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="5">
+
+        <TextView
+            android:id="@+id/hint_0_0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/hint_0_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/hint_0_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <TextView
+            android:id="@+id/hint_0_3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <TextView
+            android:id="@+id/hint_0_4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/hint_border"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_column="0"
+            app:layout_row="4" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="btnBack"
+        android:text="@string/btnBack"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/hearthsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

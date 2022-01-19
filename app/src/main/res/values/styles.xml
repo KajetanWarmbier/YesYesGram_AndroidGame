@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="fieldBtn" parent="Theme.AppCompat">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:alpha">0</item>
+        <item name="android:backgroundTint">#000000</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:onClick">changeColor</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+</resources>
